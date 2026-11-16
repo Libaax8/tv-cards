@@ -25,7 +25,7 @@
     ".dv{display:none;position:fixed;left:4vw;right:4vw;top:8.6vw;z-index:1;align-items:center;justify-content:center;pointer-events:none;color:#fff}" +
     ".theme-night .dv.on{display:flex}.theme-oled .dv.on{display:none}" +
     ".dv-card{max-width:92vw;min-width:34vw;box-sizing:border-box;padding:1vw 2.4vw 1.3vw;border-radius:1.5vw;" +
-    "background:rgba(7,9,15,.44);border:1px solid rgba(255,255,255,.09);box-shadow:0 1vw 3vw rgba(0,0,0,.28);" +
+    "background:rgba(7,9,15,.6);border:1px solid rgba(255,255,255,.09);box-shadow:0 1vw 3vw rgba(0,0,0,.28);" +
     "text-shadow:0 1px 2px rgba(0,0,0,.55)}" +
     ".dv-arabic{font-family:'Amiri Quran','Noto Naskh Arabic',serif;direction:rtl;text-align:center;line-height:1.95}" +
     ".dv-ref{margin:.5vw 0 .7vw;text-align:center;font-size:.9vw;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#ecc97a}" +

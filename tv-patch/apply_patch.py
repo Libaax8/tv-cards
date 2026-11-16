@@ -12,25 +12,27 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TAG = '<script src="verse.js"></script>'
+TAG2 = '<script src="bgpools.js"></script>'
 BEFORE = '<script src="cards.js"></script>'
 
 
 def main():
     web = os.path.join(sys.argv[1], "tv-home", "web")
     shutil.copyfile(os.path.join(HERE, "verse.js"), os.path.join(web, "verse.js"))
+    shutil.copyfile(os.path.join(HERE, "bgpools.js"), os.path.join(web, "bgpools.js"))
     shutil.copyfile(os.path.join(HERE, "AmiriQuran-Regular.ttf"), os.path.join(web, "fonts", "AmiriQuran-Regular.ttf"))
     shutil.copyfile(os.path.join(HERE, "AmiriQuran-OFL.txt"), os.path.join(web, "fonts", "AmiriQuran-OFL.txt"))
     page = os.path.join(web, "index.html")
     with open(page, encoding="utf-8", newline="") as f:
         html = f.read()
-    if TAG in html:
-        print("already in index.html")
-    elif BEFORE in html:
-        with open(page, "w", encoding="utf-8", newline="") as f:
-            f.write(html.replace(BEFORE, TAG + "\n" + BEFORE, 1))
-        print("added to index.html")
-    else:
-        sys.exit("index.html has changed: could not find where to add the script")
+    if BEFORE not in html:
+        sys.exit("index.html has changed: could not find where to add the scripts")
+    for tag in (TAG, TAG2):
+        if tag not in html:
+            html = html.replace(BEFORE, tag + chr(10) + BEFORE, 1)
+            print("added", tag)
+    with open(page, "w", encoding="utf-8", newline="") as f:
+        f.write(html)
 
 
 if __name__ == "__main__":
