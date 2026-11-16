@@ -2,7 +2,7 @@
 
 For each of the next DAYS days: the prayer times (for the TV to work out the next prayer by its own
 clock), that day's reminder cards, and that day's checked verse. The TV keeps a copy, so the home
-stays right for a week even if this job, GitHub or the internet is late or down.
+stays right for a month even if this job, GitHub or the internet is late or down.
 
 Run:  python make_days.py
 """
@@ -14,7 +14,7 @@ import sys
 import make_cards
 import make_verse
 
-DAYS = 8
+DAYS = 30
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "days.json")
 
