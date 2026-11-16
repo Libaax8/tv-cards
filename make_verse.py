@@ -1,8 +1,8 @@
 """Builds verse.json: one ayah a day for the TV home, with transliteration and an English translation.
 
 Nothing here is written by hand or generated. Every word comes from quran.com's own data feed
-(api.quran.com): the Arabic (Uthmani script), the transliteration quran.com shows, and the Saheeh
-International translation. Before a verse is used, its Arabic is compared, letter for letter, with a
+(api.quran.com): the Arabic (Uthmani script, with quran.com's tajweed colouring), the
+transliteration quran.com shows, and the Saheeh International translation. Before a verse is used, its Arabic is compared, letter for letter, with a
 second, independent copy of the Quran (api.alquran.cloud, from Tanzil). A verse that does not match, or
 that either source does not return, is not shown: the previous day's verse stays.
 
@@ -11,6 +11,7 @@ VERSES only chooses WHICH ayah is shown on a day; it holds references, never tex
 Run:  python make_verse.py            writes verse.json next to this file (once a day)
       python make_verse.py --force    fetch again even if today's verse is already there
       python make_verse.py --check    go through every reference in VERSES and report
+      python make_verse.py --key 2:255 [file]   that verse, printed or written to a file (for previews)
 """
 import datetime as dt
 import difflib
@@ -25,10 +26,10 @@ TZ = ZoneInfo("Europe/Oslo")
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "verse.json")
 TRANSLATION, TRANSLITERATION = 20, 57      # quran.com ids: Saheeh International, Transliteration
-MAX_TRANSLATION, MAX_ARABIC = 240, 190      # longer verses do not fit beside the clock
+MAX_TRANSLATION = 1100                     # the screen shrinks the text to fit; past this it is too small to read
 
 VERSES = """
-2:152 2:153 2:155 2:186 2:201 2:216 2:263 2:269 2:277 3:8 3:31 3:38 3:54 3:92 3:133 3:139 3:173 3:200
+2:255 2:285 2:286 2:152 2:153 2:155 2:186 2:201 2:216 2:263 2:269 2:277 3:8 3:31 3:38 3:54 3:92 3:133 3:139 3:173 3:200
 4:28 4:110 6:17 6:54 6:162 7:23 7:31 7:55 7:56 7:199 7:205 8:2 8:46 9:51 9:119 9:129 10:57 10:62
 11:6 11:114 12:86 12:87 13:28 14:7 14:40 14:41 15:9 15:49 15:99 16:18 16:90 16:97 16:127 16:128
 17:24 17:80 17:82 18:10 18:46 20:14 20:25 20:114 21:35 21:83 21:87 21:107 23:1 23:2 23:97 23:118
@@ -51,6 +52,54 @@ def plain(html):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", html)).strip()
 
 
+TAJWEED = re.compile(r"<tajweed class=\"?([a-z_]+)\"?>(.*?)</tajweed>|<span class=\"?end\"?>(.*?)</span>", re.S)
+
+
+def tajweed_parts(marked, arabic, number):
+    """The verse as [[text, rule or ""], ...] for colouring, or None when the colours cannot be trusted.
+
+    quran.com's tajweed text is written for its own font and spells a few marks differently from
+    the plain Uthmani text. So its letters are NOT shown: only its rule names (qalaqah, ikhafa,
+    madda_normal, ghunnah ...) are laid over the verified Uthmani text, character by character.
+    Put back together, the parts are exactly that text, plus the verse number as the part "end".
+    """
+    theirs, rules, at = [], [], 0
+    for m in TAJWEED.finditer(marked or ""):
+        theirs.append(marked[at:m.start()])
+        rules += [""] * (m.start() - at)
+        if m.group(1):
+            theirs.append(m.group(2))
+            rules += [m.group(1)] * len(m.group(2))
+        at = m.end()
+    theirs.append((marked or "")[at:])
+    rules += [""] * (len(marked or "") - at)
+    theirs = "".join(theirs)
+    if not theirs or "<" in theirs or ">" in theirs:
+        return None
+    match = difflib.SequenceMatcher(None, arabic, theirs, autojunk=False)
+    if match.ratio() < 0.9:
+        return None
+    mine = [""] * len(arabic)
+    for op, i1, i2, j1, j2 in match.get_opcodes():
+        for i in range(i1, i2):
+            if op == "equal":
+                mine[i] = rules[j1 + i - i1]
+            elif op == "replace":
+                mine[i] = rules[min(j1 + i - i1, j2 - 1)]
+    parts = []
+    for ch, rule in zip(arabic, mine):
+        if ch == " ":
+            rule = ""
+        if parts and parts[-1][1] == rule:
+            parts[-1][0] += ch
+        else:
+            parts.append([ch, rule])
+    if "".join(p[0] for p in parts) != arabic:
+        return None
+    digits = "".join(chr(0x0660 + int(d)) for d in str(number))
+    return parts + [["۝" + digits, "end"]]
+
+
 def letters(arabic):
     """Only the letters, with the spellings of alif, ya and hamza carriers made the same, to compare two copies."""
     s = re.sub("[آأإٱٲٳ]", "ا", arabic)
@@ -61,7 +110,7 @@ def letters(arabic):
 def fetch(key):
     """The verse from quran.com, checked against alquran.cloud. Returns (verse dict or None, why not)."""
     surah = int(key.split(":")[0])
-    v = get("https://api.quran.com/api/v4/verses/by_key/%s?translations=%d,%d&fields=text_uthmani,text_imlaei_simple"
+    v = get("https://api.quran.com/api/v4/verses/by_key/%s?translations=%d,%d&fields=text_uthmani,text_uthmani_tajweed,text_imlaei_simple"
             % (key, TRANSLATION, TRANSLITERATION))["verse"]
     if v.get("verse_key") != key:
         return None, "quran.com answered with another verse"
@@ -84,14 +133,16 @@ def fetch(key):
         return None, "the Arabic differs between the two sources (%.2f)" % same
     if difflib.SequenceMatcher(None, letters(arabic), theirs).ratio() < 0.9:
         return None, "the Uthmani text does not fit the verse"
-    if len(english) > MAX_TRANSLATION or len(arabic) > MAX_ARABIC:
+    if len(english) > MAX_TRANSLATION:
         return None, "too long for the screen"
+    parts = tajweed_parts(v.get("text_uthmani_tajweed"), arabic, v.get("verse_number"))   # None: shown without the colours
     chapter = get("https://api.quran.com/api/v4/chapters/%d" % surah)["chapter"]
     return {
         "key": key,
         "reference": "%s %s" % (chapter["name_simple"], key),
         "surah_arabic": chapter["name_arabic"],
         "arabic": arabic,
+        "tajweed": parts or [],
         "transliteration": latin,
         "translation": english,
         "translation_by": "Saheeh International",
@@ -111,8 +162,22 @@ def main():
             except Exception as e:
                 v, why = None, "error: %s" % e
             ok += bool(v)
-            print("%-7s %s" % (key, "ok   " + v["translation"][:70] if v else "LEFT OUT: " + why))
+            print("%-7s %s" % (key, "ok %4d %s %s" % (len(v["translation"]), "tajweed" if v["tajweed"] else "PLAIN  ", v["translation"][:50]) if v else "LEFT OUT: " + why))
         print("%d of %d can be shown" % (ok, len(VERSES)))
+        return
+    if "--key" in sys.argv:
+        rest = sys.argv[sys.argv.index("--key") + 1:]
+        verse, why = fetch(rest[0])
+        if not verse:
+            sys.exit("%s left out: %s" % (rest[0], why))
+        verse["date"] = today.isoformat()
+        text = json.dumps(verse, ensure_ascii=False, indent=2)
+        if len(rest) > 1:
+            with open(rest[1], "w", encoding="utf-8", newline=chr(10)) as f:
+                f.write(text + chr(10))
+        else:
+            sys.stdout.reconfigure(encoding="utf-8")
+            print(text)
         return
     try:
         with open(OUT, encoding="utf-8") as f:

@@ -12,6 +12,8 @@ import re
 import subprocess
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 WEB = os.path.join(HERE, "..", "couch-tv", "tv-home", "web")
 SAMPLE = re.compile(r'cards: arg\("cards"\) \? \[[\s\S]*?\] : \[\]')
@@ -41,6 +43,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         path = self.path.split("?")[0]
         if path == "/cards.json":
             return self._send(json.dumps(cards(), ensure_ascii=False), "application/json")
+        if path == "/verse.json":      # /verse.json?key=2:255 : that verse, checked the same way
+            import make_verse
+            key = (self.path.split("key=")[1].split("&")[0] if "key=" in self.path else "2:255").replace("%3A", ":")
+            verse, why = make_verse.fetch(key)
+            return self._send(json.dumps(verse or {"error": why}, ensure_ascii=False), "application/json")
         if path == "/mock.js":
             with open(os.path.join(WEB, "mock.js"), encoding="utf-8") as f:
                 src = f.read()
