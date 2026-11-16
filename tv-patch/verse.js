@@ -114,17 +114,88 @@
     fit();
     return true;
   }
-  function load() {
-    if (!window.fetch) return;
-    fetch(URL, { credentials: "omit", cache: "no-store" })
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (v) {
-        if (show(v)) { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {} }
-      }, function () {});
+  // ---- the data: a week of days (prayer times, cards, verse), kept on the TV ----
+  // days.json is made ahead of time, so the home stays right when the job that makes it runs late.
+  var DAYS_URL = "https://raw.githubusercontent.com/Libaax8/tv-cards/main/days.json";
+  var CARDS_END = "/tv-cards/main/cards.json", DAYS_KEY = "tvcards:days", days = {}, shown = "";
+  try { days = JSON.parse(localStorage.getItem(DAYS_KEY) || "{}") || {}; } catch (e) { days = {}; }
+
+  function oslo(offsetDays) {   // {date: "2026-11-16", time: "13:45"} in the mosque's time zone
+    var d = new Date(Date.now() + (offsetDays || 0) * 86400000), out = { date: "", time: "" };
+    try {
+      var p = {};
+      new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Oslo", year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", hour12: false }).formatToParts(d).forEach(function (x) { p[x.type] = x.value; });
+      out.date = p.year + "-" + p.month + "-" + p.day;
+      out.time = (p.hour === "24" ? "00" : p.hour) + ":" + p.minute;
+    } catch (e) {
+      var z = function (n) { return (n < 10 ? "0" : "") + n; };
+      out.date = d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate());
+      out.time = z(d.getHours()) + ":" + z(d.getMinutes());
+    }
+    return out;
   }
-  try { show(JSON.parse(localStorage.getItem(KEY) || "null")); } catch (e) {}
+  // Today's cards, with "Next prayer" worked out from the TV's own clock. null: no data for today.
+  function cardsNow() {
+    var now = oslo(0), day = days[now.date], next = days[oslo(1).date];
+    if (!day || !Array.isArray(day.prayers) || !Array.isArray(day.cards)) return null;
+    var label = "Next prayer", p = null;
+    day.prayers.some(function (x) { if (x[1] > now.time) { p = x; return true; } return false; });
+    if (!p && next && Array.isArray(next.prayers) && next.prayers.length) { p = next.prayers[0]; label = "Next prayer, tomorrow"; }
+    var first = p ? [{ subtitle: label, title: p[0] + " " + p[1], value: p[2] ? "Iqamah " + p[2] : "" }] : [];
+    return first.concat(day.cards).slice(0, 8);
+  }
+  // couch-tv asks for cards.json every 10 minutes: answer from the days kept here, so the next
+  // prayer is always by the clock. Without data for today the request goes out as usual.
+  var realFetch = window.fetch;
+  if (realFetch && window.Response) {
+    window.fetch = function (input, init) {
+      try {
+        var u = typeof input === "string" ? input : (input && input.url) || "";
+        var q = u.indexOf("?"), bare = q < 0 ? u : u.slice(0, q);
+        if (!pv && bare.slice(-CARDS_END.length) === CARDS_END) {
+          var cards = cardsNow();
+          if (cards) return Promise.resolve(new Response(JSON.stringify({ cards: cards }), { status: 200, headers: { "Content-Type": "application/json" } }));
+        }
+      } catch (e) {}
+      return realFetch.apply(this, arguments);
+    };
+  }
+  function verseNow() {
+    if (pv) return;
+    var today = oslo(0).date, day = days[today];
+    if (day && day.verse && shown !== today && show(day.verse)) shown = today;
+  }
+  function load() {
+    if (!realFetch) return;
+    if (pv) {
+      realFetch.call(window, URL, { credentials: "omit", cache: "no-store" })
+        .then(function (r) { return r.ok ? r.json() : null; }).then(show, function () {});
+      return;
+    }
+    realFetch.call(window, DAYS_URL, { credentials: "omit", cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (j && j.days && typeof j.days === "object") {
+          // keep days already here that the new file no longer lists (yesterday), drop old ones
+          var keep = {}, from = oslo(-1).date;
+          Object.keys(days).concat(Object.keys(j.days)).forEach(function (k) { if (k >= from) keep[k] = j.days[k] || days[k]; });
+          days = keep;
+          shown = "";
+          try { localStorage.setItem(DAYS_KEY, JSON.stringify(days)); } catch (e) {}
+        }
+        verseNow();
+        if (!shown) {   // nothing for today yet: the single verse file, as before
+          realFetch.call(window, URL, { credentials: "omit", cache: "no-store" })
+            .then(function (r) { return r.ok ? r.json() : null; }).then(show, function () {});
+        }
+      }, function () { verseNow(); });
+  }
+  verseNow();
+  if (!shown) { try { show(JSON.parse(localStorage.getItem(KEY) || "null")); } catch (e) {} }
   load();
   setInterval(load, EVERY_MIN * 60000);
+  setInterval(verseNow, 5 * 60000);   // midnight: the next day's verse, from the days kept here
   // the rows and the font arrive after the first draw: measure again
   window.addEventListener("resize", fit);
   [600, 2000, 5000].forEach(function (ms) { setTimeout(fit, ms); });

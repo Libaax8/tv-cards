@@ -187,24 +187,37 @@ def main():
                 return
     except (OSError, ValueError):
         pass
-    start = today.toordinal() % len(VERSES)
-    for n in range(12):      # a verse that cannot be shown today: try the next ones in the list
+    verse = verse_for(today)
+    if not verse:
+        print("no verse could be checked today; the last one stays", file=sys.stderr)
+        return
+    tmp = OUT + ".tmp"
+    with open(tmp, "w", encoding="utf-8", newline=chr(10)) as f:
+        json.dump(verse, f, ensure_ascii=False, indent=2)
+        f.write(chr(10))
+    os.replace(tmp, OUT)
+    print("verse of the day: %s" % verse["reference"])
+
+
+def first_choice(day):
+    """Where in VERSES that date starts. The step of 37 walks the whole list before repeating, without going surah by surah."""
+    return (day.toordinal() * 37) % len(VERSES)
+
+
+def verse_for(day):
+    """The checked verse for that date, or None. A verse that cannot be shown: the next ones in the list are tried."""
+    start = first_choice(day)
+    for n in range(12):
         key = VERSES[(start + n) % len(VERSES)]
         try:
             verse, why = fetch(key)
         except Exception as e:
             verse, why = None, "error: %s" % e
         if verse:
-            verse["date"] = today.isoformat()
-            tmp = OUT + ".tmp"
-            with open(tmp, "w", encoding="utf-8", newline="\n") as f:
-                json.dump(verse, f, ensure_ascii=False, indent=2)
-                f.write("\n")
-            os.replace(tmp, OUT)
-            print("verse of the day: %s" % verse["reference"])
-            return
+            verse["date"] = day.isoformat()
+            return verse
         print("%s left out: %s" % (key, why), file=sys.stderr)
-    print("no verse could be checked today; the last one stays", file=sys.stderr)
+    return None
 
 
 if __name__ == "__main__":

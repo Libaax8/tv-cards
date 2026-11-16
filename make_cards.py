@@ -121,10 +121,10 @@ def card(label, big, small=""):
     return {"subtitle": label[:60], "title": big[:40], "value": small[:24]}
 
 
-def build(now=None):
+def build(now=None, table=None):
     now = now or dt.datetime.now(TZ)
     today = now.date()
-    table = load_table(today)
+    table = table or load_table(today)
     off = table.get("hijri_offset") or 0
     times = day_times(table, today)
     tomorrow = day_times(table, today + dt.timedelta(days=1))

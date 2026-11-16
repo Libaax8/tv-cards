@@ -1,27 +1,19 @@
 {
-  "key": "21:83",
-  "reference": "Al-Anbya 21:83",
-  "surah_arabic": "الأنبياء",
-  "arabic": "وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُۥٓ أَنِّى مَسَّنِىَ ٱلضُّرُّ وَأَنتَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+  "key": "55:60",
+  "reference": "Ar-Rahman 55:60",
+  "surah_arabic": "الرحمن",
+  "arabic": "هَلْ جَزَآءُ ٱلْإِحْسَـٰنِ إِلَّا ٱلْإِحْسَـٰنُ",
   "tajweed": [
     [
-      "وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُ",
+      "هَلْ جَز",
       ""
     ],
     [
-      "ۥٓ",
+      "َا",
       "madda_obligatory"
     ],
     [
-      " أَ",
-      ""
-    ],
-    [
-      "نّ",
-      "ghunnah"
-    ],
-    [
-      "ِى مَسَّنِىَ ",
+      "ٓءُ ",
       ""
     ],
     [
@@ -29,56 +21,40 @@
       "ham_wasl"
     ],
     [
-      "ل",
-      "laam_shamsiyah"
-    ],
-    [
-      "ضُّرُّ وَأَ",
+      "لْإِحْسَ",
       ""
     ],
     [
-      "نت",
-      "ikhafa"
-    ],
-    [
-      "َ أَرْحَمُ ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "ل",
-      "laam_shamsiyah"
-    ],
-    [
-      "رّ",
-      ""
-    ],
-    [
-      "َٰ",
+      "ـٰ",
       "madda_normal"
     ],
     [
-      "حِم",
+      "نِ إِلَّا ",
       ""
     ],
     [
-      "ِي",
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "لْإِحْسَ",
+      ""
+    ],
+    [
+      "ـٰ",
       "madda_permissible"
     ],
     [
-      "نَ",
+      "نُ",
       ""
     ],
     [
-      "۝٨٣",
+      "۝٦٠",
       "end"
     ]
   ],
-  "transliteration": "Waayyooba ith nadarabbahu annee massaniya addurru waanta arhamuarrahimeen",
-  "translation": "And [mention] Job, when he called to his Lord, \"Indeed, adversity has touched me, and You are the most merciful of the merciful.\"",
+  "transliteration": "Hal jazao al-ihsani illaal-ihsan",
+  "translation": "Is the reward for good [anything] but good?",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
