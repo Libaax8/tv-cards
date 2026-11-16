@@ -3,9 +3,10 @@
 // night), and with "Follow the sun" it shows the one that fits the sun's height. This gives each
 // of those five a pool of photos instead of one: every time a scene comes on it shows the next
 // photo of its pool, and a scene that stays on (Follow the sun) changes photo every 10 minutes.
-// The photos are in backgrounds/mine/isl/, 1920x1080 and 3840x2160 ("@2x") copies of each.
+// Mosque photos (backgrounds/mine/isl/), nature photos (backgrounds/mine/nat/) and couch-tv's own
+// scene photos take turns. Each has a 1920x1080 and a 3840x2160 ("@2x") copy.
 (function () {
-  var POOLS = /*POOLS*/{"dawn": ["dawn-01", "dawn-02", "dawn-03", "dawn-04"], "day": ["day-01", "day-02", "day-03", "day-04", "day-05", "day-06", "day-07", "day-08"], "fog": ["fog-01", "fog-02", "fog-03", "fog-04"], "golden": ["golden-01", "golden-02", "golden-03", "golden-04", "golden-05", "golden-06"], "night": ["night-01", "night-02", "night-03", "night-04", "night-05"]}/*END*/;
+  var POOLS = /*POOLS*/{"dawn": ["mine/isl/dawn-01", "scene-dawn", "mine/isl/dawn-02", "mine/nat/dawn-01", "mine/isl/dawn-03", "mine/nat/dawn-02", "mine/isl/dawn-04", "mine/nat/dawn-03"], "day": ["mine/isl/day-01", "scene-water", "mine/isl/day-02", "mine/nat/day-01", "mine/isl/day-03", "mine/nat/day-02", "mine/isl/day-04", "mine/nat/day-03", "mine/isl/day-05", "mine/nat/day-04", "mine/isl/day-06", "mine/isl/day-07", "mine/isl/day-08"], "fog": ["mine/isl/fog-01", "scene-fog", "mine/isl/fog-02", "mine/nat/fog-01", "mine/isl/fog-03", "mine/nat/fog-02", "mine/isl/fog-04", "mine/nat/fog-03", "mine/nat/fog-04"], "golden": ["mine/isl/golden-01", "scene-golden", "mine/isl/golden-02", "mine/nat/golden-01", "mine/isl/golden-03", "mine/nat/golden-02", "mine/isl/golden-04", "mine/isl/golden-05", "mine/isl/golden-06"], "night": ["mine/isl/night-01", "scene-night", "mine/isl/night-02", "mine/nat/night-01", "mine/isl/night-03", "mine/nat/night-02", "mine/isl/night-04", "mine/nat/night-03", "mine/isl/night-05", "mine/nat/night-04"]}/*END*/;
   var SLOT = { dawn: "dawn", water: "day", fog: "fog", golden: "golden", night: "night" };   // couch-tv's scene -> pool
   var STAY_MIN = 10;
   // the 4K copies whenever the screen is really drawn with that many pixels
@@ -19,7 +20,7 @@
     ".dv-on .scene .gclock .fill{background-image:none!important;color:rgba(255,255,255,.86)!important}";
   document.head.appendChild(style);
 
-  function file(pool) { return "backgrounds/mine/isl/" + POOLS[pool][at[pool]] + (hi ? "@2x" : "") + ".jpg"; }
+  function file(pool) { return "backgrounds/" + POOLS[pool][at[pool]] + (hi ? "@2x" : "") + ".jpg"; }
   function put(el, pool) {
     var img = el.querySelector("img.sbg"), list = POOLS[pool];
     if (!img || !list || !list.length || dead[pool]) return;
