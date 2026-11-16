@@ -38,7 +38,8 @@
     // the clock steps up and gets small while a verse is showing; the date sits above it
     ".dv-on.theme-night .scene .gclock{font-size:5.2vw!important;top:3.1vw!important;left:0!important;right:0!important;text-align:center!important}" +
     ".dv-on.theme-night .scene .gclock.under{display:none!important}" +
-    ".dv-on.theme-night .date{top:1.1vw!important;font-size:1.3vw!important;line-height:1.9vw!important}";
+    ".dv-on.theme-night .date{top:1.1vw!important;font-size:1.3vw!important;line-height:1.9vw!important}" +
+    ".dv-on.theme-night .date .dline>.wx{margin-left:.9vw}";
 
   function el(cls, parent) {
     var d = document.createElement("div");
