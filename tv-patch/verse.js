@@ -107,7 +107,7 @@
       arabic.textContent = a;
     }
     ref.textContent = r;
-    tr.textContent = "“" + t + "”";
+    tr.textContent = t;
     lat.textContent = str(v.transliteration, 3000);
     box.className = "dv on" + (t.length > 230 ? " wide" : "");
     document.documentElement.classList.add("dv-on");

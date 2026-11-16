@@ -115,7 +115,9 @@ def fetch(key):
     if v.get("verse_key") != key:
         return None, "quran.com answered with another verse"
     by_id = {t["resource_id"]: plain(t["text"]) for t in v.get("translations") or []}
-    arabic, english, latin = (v.get("text_uthmani") or "").strip(), by_id.get(TRANSLATION), by_id.get(TRANSLITERATION)
+    # U+06DE is the mushaf's mark for a quarter of a hizb, printed before some verses; it is not part of the verse
+    arabic = (v.get("text_uthmani") or "").replace("۞", "").strip()
+    english, latin = by_id.get(TRANSLATION), by_id.get(TRANSLITERATION)
     if not (arabic and english and latin):
         return None, "a part is missing"
     other = get("https://api.alquran.cloud/v1/ayah/%s/quran-simple-clean" % key)["data"]
