@@ -12,3 +12,11 @@ tawfiiq.no. `timetable.json` is a saved copy, refreshed once a day.
 
 `preview_server.py` is for trying the cards on a computer: it shows couch-tv's preview home with
 these cards in place of its samples.
+
+## Verse of the day
+
+`make_verse.py` writes `verse.json`: one ayah a day with its transliteration and the Saheeh
+International translation, all taken from quran.com's data feed. The Arabic is compared letter for
+letter with a second copy of the Quran (alquran.cloud, from Tanzil) before it is used; a verse that
+does not match is never shown. `tv-patch/` adds a panel beside the clock in couch-tv's home that
+shows it (`apply_patch.py`), in the Amiri Quran font (SIL Open Font Licence).
