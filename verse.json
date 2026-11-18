@@ -1,11 +1,19 @@
 {
-  "key": "2:277",
-  "reference": "Al-Baqarah 2:277",
-  "surah_arabic": "البقرة",
-  "arabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَءَاتَوُا۟ ٱلزَّكَوٰةَ لَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+  "key": "15:49",
+  "reference": "Al-Hijr 15:49",
+  "surah_arabic": "الحجر",
+  "arabic": "نَبِّئْ عِبَادِىٓ أَنِّىٓ أَنَا ٱلْغَفُورُ ٱلرَّحِيمُ",
   "tajweed": [
     [
-      "إِ",
+      "نَبِّئْ عِبَاد",
+      ""
+    ],
+    [
+      "ِىٓ",
+      "madda_obligatory"
+    ],
+    [
+      " أَ",
       ""
     ],
     [
@@ -13,7 +21,11 @@
       "ghunnah"
     ],
     [
-      "َ ",
+      "ِىٓ",
+      "madda_obligatory"
+    ],
+    [
+      " أَنَا ",
       ""
     ],
     [
@@ -21,23 +33,7 @@
       "ham_wasl"
     ],
     [
-      "لَّذِينَ ءَامَنُو",
-      ""
-    ],
-    [
-      "ا۟",
-      "slnt"
-    ],
-    [
-      " وَعَمِلُو",
-      ""
-    ],
-    [
-      "ا۟",
-      "slnt"
-    ],
-    [
-      " ",
+      "لْغَفُورُ ",
       ""
     ],
     [
@@ -49,122 +45,26 @@
       "laam_shamsiyah"
     ],
     [
-      "صَّ",
+      "رَّح",
       ""
     ],
     [
-      "ـٰ",
-      "madda_normal"
-    ],
-    [
-      "لِحَ",
-      ""
-    ],
-    [
-      "ـٰ",
-      "madda_normal"
-    ],
-    [
-      "تِ وَأَقَامُو",
-      ""
-    ],
-    [
-      "ا۟",
-      "slnt"
-    ],
-    [
-      " ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "ل",
-      "laam_shamsiyah"
-    ],
-    [
-      "صَّلَ",
-      ""
-    ],
-    [
-      "و",
-      "slnt"
-    ],
-    [
-      "ٰ",
-      "madda_normal"
-    ],
-    [
-      "ةَ وَءَاتَوُ",
-      ""
-    ],
-    [
-      "ا۟",
-      "slnt"
-    ],
-    [
-      " ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "ل",
-      "laam_shamsiyah"
-    ],
-    [
-      "زَّكَ",
-      ""
-    ],
-    [
-      "و",
-      "slnt"
-    ],
-    [
-      "ٰ",
-      "madda_normal"
-    ],
-    [
-      "ةَ لَهُمْ أَ",
-      ""
-    ],
-    [
-      "جْ",
-      "qalaqah"
-    ],
-    [
-      "رُهُمْ عِ",
-      ""
-    ],
-    [
-      "ند",
-      "ikhafa"
-    ],
-    [
-      "َ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَن",
-      ""
-    ],
-    [
-      "ُو",
+      "ِي",
       "madda_permissible"
     ],
     [
-      "نَ",
+      "مُ",
       ""
     ],
     [
-      "۝٢٧٧",
+      "۝٤٩",
       "end"
     ]
   ],
-  "transliteration": "Inna allatheena amanoowaAAamiloo assalihati waaqamoo assalatawaatawoo azzakata lahum ajruhum AAindarabbihim wala khawfun AAalayhim wala hum yahzanoon",
-  "translation": "Indeed, those who believe and do righteous deeds and establish prayer and give zakāh will have their reward with their Lord, and there will be no fear concerning them, nor will they grieve.",
+  "transliteration": "Nabbi/ AAibadee annee anaalghafooru arraheem",
+  "translation": "[O Muḥammad], inform My servants that it is I who am the Forgiving, the Merciful,",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-17"
+  "date": "2026-11-18"
 }

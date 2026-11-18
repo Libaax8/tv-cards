@@ -1,44 +1,44 @@
 {
   "cards": [
     {
-      "subtitle": "Next prayer, tomorrow",
+      "subtitle": "Next prayer",
       "title": "Fajr 06:38",
       "value": "Iqamah 06:48"
     },
     {
       "subtitle": "Morning, Tawfiiq",
-      "title": "Fajr 06:36",
-      "value": "Sunrise 08:18"
+      "title": "Fajr 06:38",
+      "value": "Sunrise 08:21"
     },
     {
       "subtitle": "Midday",
       "title": "Dhuhr 12:07",
-      "value": "Asr 13:26"
+      "value": "Asr 13:24"
     },
     {
       "subtitle": "Evening",
-      "title": "Maghrib 15:48",
-      "value": "Isha 17:18"
+      "title": "Maghrib 15:46",
+      "value": "Isha 17:16"
     },
     {
       "subtitle": "Jumu'ah",
       "title": "Friday 12:30",
-      "value": "In 3 days"
+      "value": "In 2 days"
     },
     {
       "subtitle": "Hijri date",
-      "title": "7 Jumada II 1448",
-      "value": "Ramadan in ~83 days"
+      "title": "8 Jumada II 1448",
+      "value": "Ramadan in ~82 days"
     },
     {
-      "subtitle": "Sunnah fast",
+      "subtitle": "Sunnah fast tomorrow",
       "title": "Thursday",
       "value": "Suhoor before 06:41"
     },
     {
       "subtitle": "Dhikr of the day",
-      "title": "Allahu Akbar",
-      "value": "34 times after prayer"
+      "title": "Astaghfirullah",
+      "value": "100 times a day"
     }
   ]
 }
