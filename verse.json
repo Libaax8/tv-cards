@@ -1,39 +1,19 @@
 {
-  "key": "15:49",
-  "reference": "Al-Hijr 15:49",
-  "surah_arabic": "الحجر",
-  "arabic": "نَبِّئْ عِبَادِىٓ أَنِّىٓ أَنَا ٱلْغَفُورُ ٱلرَّحِيمُ",
+  "key": "35:15",
+  "reference": "Fatir 35:15",
+  "surah_arabic": "فاطر",
+  "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ أَنتُمُ ٱلْفُقَرَآءُ إِلَى ٱللَّهِ ۖ وَٱللَّهُ هُوَ ٱلْغَنِىُّ ٱلْحَمِيدُ",
   "tajweed": [
     [
-      "نَبِّئْ عِبَاد",
+      "يَ",
       ""
     ],
     [
-      "ِىٓ",
+      "ـٰٓ",
       "madda_obligatory"
     ],
     [
-      " أَ",
-      ""
-    ],
-    [
-      "نّ",
-      "ghunnah"
-    ],
-    [
-      "ِىٓ",
-      "madda_obligatory"
-    ],
-    [
-      " أَنَا ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "لْغَفُورُ ",
+      "أَيُّهَا ",
       ""
     ],
     [
@@ -45,7 +25,67 @@
       "laam_shamsiyah"
     ],
     [
-      "رَّح",
+      "نّ",
+      "ghunnah"
+    ],
+    [
+      "َاسُ أَ",
+      ""
+    ],
+    [
+      "نت",
+      "ikhafa"
+    ],
+    [
+      "ُمُ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "لْفُقَر",
+      ""
+    ],
+    [
+      "َا",
+      "madda_obligatory"
+    ],
+    [
+      "ٓءُ إِلَى ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "للَّهِ ۖ وَ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "للَّهُ هُوَ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "لْغَنِىُّ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "لْحَم",
       ""
     ],
     [
@@ -53,18 +93,22 @@
       "madda_permissible"
     ],
     [
-      "مُ",
+      "د",
+      "qalaqah"
+    ],
+    [
+      "ُ",
       ""
     ],
     [
-      "۝٤٩",
+      "۝١٥",
       "end"
     ]
   ],
-  "transliteration": "Nabbi/ AAibadee annee anaalghafooru arraheem",
-  "translation": "[O Muḥammad], inform My servants that it is I who am the Forgiving, the Merciful,",
+  "transliteration": "Ya ayyuha annasuantumu alfuqarao ila Allahi wallahuhuwa alghaniyyu alhameed",
+  "translation": "O mankind, you are those in need of Allāh, while Allāh is the Free of need, the Praiseworthy.",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-18"
+  "date": "2026-11-19"
 }
