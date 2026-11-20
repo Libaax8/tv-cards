@@ -1,114 +1,70 @@
 {
-  "key": "35:15",
-  "reference": "Fatir 35:15",
-  "surah_arabic": "فاطر",
-  "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ أَنتُمُ ٱلْفُقَرَآءُ إِلَى ٱللَّهِ ۖ وَٱللَّهُ هُوَ ٱلْغَنِىُّ ٱلْحَمِيدُ",
+  "key": "99:8",
+  "reference": "Az-Zalzalah 99:8",
+  "surah_arabic": "الزلزلة",
+  "arabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
   "tajweed": [
     [
-      "يَ",
+      "وَم",
       ""
     ],
     [
-      "ـٰٓ",
-      "madda_obligatory"
+      "َن",
+      "idgham_ghunnah"
     ],
     [
-      "أَيُّهَا ",
+      " ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "ي",
+      "idgham_ghunnah"
     ],
     [
-      "ل",
-      "laam_shamsiyah"
-    ],
-    [
-      "نّ",
-      "ghunnah"
-    ],
-    [
-      "َاسُ أَ",
+      "َعْمَلْ مِثْقَالَ ذَرَّ",
       ""
     ],
     [
-      "نت",
+      "ةٍ",
       "ikhafa"
     ],
     [
-      "ُمُ ",
+      " ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "ش",
+      "ikhafa"
     ],
     [
-      "لْفُقَر",
+      "َر",
       ""
     ],
     [
-      "َا",
-      "madda_obligatory"
+      "ًّا",
+      "idgham_ghunnah"
     ],
     [
-      "ٓءُ إِلَى ",
+      " ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "ي",
+      "idgham_ghunnah"
     ],
     [
-      "للَّهِ ۖ وَ",
+      "َرَهُۥ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "للَّهُ هُوَ ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "لْغَنِىُّ ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "لْحَم",
-      ""
-    ],
-    [
-      "ِي",
-      "madda_permissible"
-    ],
-    [
-      "د",
-      "qalaqah"
-    ],
-    [
-      "ُ",
-      ""
-    ],
-    [
-      "۝١٥",
+      "۝٨",
       "end"
     ]
   ],
-  "transliteration": "Ya ayyuha annasuantumu alfuqarao ila Allahi wallahuhuwa alghaniyyu alhameed",
-  "translation": "O mankind, you are those in need of Allāh, while Allāh is the Free of need, the Praiseworthy.",
+  "transliteration": "Waman yaAAmal mithqala tharratinsharran yarah",
+  "translation": "And whoever does an atom's weight of evil will see it.",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-19"
+  "date": "2026-11-20"
 }

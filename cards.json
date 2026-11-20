@@ -1,34 +1,34 @@
 {
   "cards": [
     {
-      "subtitle": "Next prayer, tomorrow",
+      "subtitle": "Next prayer",
       "title": "Fajr 06:43",
       "value": "Iqamah 06:53"
     },
     {
       "subtitle": "Morning, Tawfiiq",
-      "title": "Fajr 06:41",
-      "value": "Sunrise 08:23"
+      "title": "Fajr 06:43",
+      "value": "Sunrise 08:26"
     },
     {
       "subtitle": "Midday",
       "title": "Dhuhr 12:07",
-      "value": "Asr 13:23"
+      "value": "Asr 13:21"
     },
     {
       "subtitle": "Evening",
-      "title": "Maghrib 15:44",
-      "value": "Isha 17:14"
+      "title": "Maghrib 15:42",
+      "value": "Isha 17:13"
     },
     {
       "subtitle": "Jumu'ah",
-      "title": "Tomorrow 12:30",
+      "title": "Today 12:30",
       "value": "Prayer 13:00"
     },
     {
       "subtitle": "Hijri date",
-      "title": "9 Jumada II 1448",
-      "value": "Ramadan in ~81 days"
+      "title": "10 Jumada II 1448",
+      "value": "Ramadan in ~80 days"
     },
     {
       "subtitle": "White day fast",
@@ -37,8 +37,8 @@
     },
     {
       "subtitle": "Dhikr of the day",
-      "title": "La ilaha illa Allah",
-      "value": "The best dhikr"
+      "title": "Salawat on the Prophet",
+      "value": "Most of all on Friday"
     }
   ]
 }
