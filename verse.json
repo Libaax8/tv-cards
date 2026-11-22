@@ -1,13 +1,82 @@
 {
-  "key": "8:46",
-  "reference": "Al-Anfal 8:46",
-  "surah_arabic": "الأنفال",
-  "arabic": "وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥ وَلَا تَنَـٰزَعُوا۟ فَتَفْشَلُوا۟ وَتَذْهَبَ رِيحُكُمْ ۖ وَٱصْبِرُوٓا۟ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِينَ",
-  "tajweed": [],
-  "transliteration": "WaateeAAoo Allaha warasoolahuwala tanazaAAoo fatafshaloo watathhaba reehukumwasbiroo inna Allaha maAAa assabireen",
-  "translation": "And obey Allāh and His Messenger, and do not dispute and [thus] lose courage and [then] your strength would depart; and be patient. Indeed, Allāh is with the patient.",
+  "key": "23:118",
+  "reference": "Al-Mu'minun 23:118",
+  "surah_arabic": "المؤمنون",
+  "arabic": "وَقُل رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+  "tajweed": [
+    [
+      "وَقُ",
+      ""
+    ],
+    [
+      "ل",
+      "idgham_mutaqaribayn"
+    ],
+    [
+      " رَّبِّ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "غْفِرْ وَ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "رْحَمْ وَأَ",
+      ""
+    ],
+    [
+      "نت",
+      "ikhafa"
+    ],
+    [
+      "َ خَيْرُ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "ل",
+      "laam_shamsiyah"
+    ],
+    [
+      "رّ",
+      ""
+    ],
+    [
+      "َٰ",
+      "madda_normal"
+    ],
+    [
+      "حِم",
+      ""
+    ],
+    [
+      "ِي",
+      "madda_permissible"
+    ],
+    [
+      "نَ",
+      ""
+    ],
+    [
+      "۝١١٨",
+      "end"
+    ]
+  ],
+  "transliteration": "Waqul rabbi ighfir warhamwaanta khayru arrahimeen",
+  "translation": "And, [O Muḥammad], say, \"My Lord, forgive and have mercy, and You are the best of the merciful.\"",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-21"
+  "date": "2026-11-22"
 }
