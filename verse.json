@@ -1,43 +1,95 @@
 {
-  "key": "23:118",
-  "reference": "Al-Mu'minun 23:118",
-  "surah_arabic": "المؤمنون",
-  "arabic": "وَقُل رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+  "key": "65:2",
+  "reference": "At-Talaq 65:2",
+  "surah_arabic": "الطلاق",
+  "arabic": "فَإِذَا بَلَغْنَ أَجَلَهُنَّ فَأَمْسِكُوهُنَّ بِمَعْرُوفٍ أَوْ فَارِقُوهُنَّ بِمَعْرُوفٍ وَأَشْهِدُوا۟ ذَوَىْ عَدْلٍ مِّنكُمْ وَأَقِيمُوا۟ ٱلشَّهَـٰدَةَ لِلَّهِ ۚ ذَٰلِكُمْ يُوعَظُ بِهِۦ مَن كَانَ يُؤْمِنُ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ ۚ وَمَن يَتَّقِ ٱللَّهَ يَجْعَل لَّهُۥ مَخْرَجًا",
   "tajweed": [
     [
-      "وَقُ",
+      "فَإِذَا بَلَغْنَ أَجَلَهُ",
       ""
     ],
     [
-      "ل",
-      "idgham_mutaqaribayn"
+      "نّ",
+      "ghunnah"
     ],
     [
-      " رَّبِّ ",
+      "َ فَأَمْسِكُوهُ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "نّ",
+      "ghunnah"
     ],
     [
-      "غْفِرْ وَ",
+      "َ بِمَعْرُوفٍ أَوْ فَارِقُوهُ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "نّ",
+      "ghunnah"
     ],
     [
-      "رْحَمْ وَأَ",
+      "َ بِمَعْرُو",
       ""
     ],
     [
-      "نت",
+      "فٍ",
+      "idgham_ghunnah"
+    ],
+    [
+      " ",
+      ""
+    ],
+    [
+      "و",
+      "idgham_ghunnah"
+    ],
+    [
+      "َأَشْهِدُو",
+      ""
+    ],
+    [
+      "ا۟",
+      "slnt"
+    ],
+    [
+      " ذَوَىْ عَ",
+      ""
+    ],
+    [
+      "دْ",
+      "qalaqah"
+    ],
+    [
+      "لٍ",
+      "idgham_ghunnah"
+    ],
+    [
+      " ",
+      ""
+    ],
+    [
+      "م",
+      "idgham_ghunnah"
+    ],
+    [
+      "ِّ",
+      ""
+    ],
+    [
+      "نك",
       "ikhafa"
     ],
     [
-      "َ خَيْرُ ",
+      "ُمْ وَأَقِيمُو",
+      ""
+    ],
+    [
+      "ا۟",
+      "slnt"
+    ],
+    [
+      " ",
       ""
     ],
     [
@@ -49,7 +101,15 @@
       "laam_shamsiyah"
     ],
     [
-      "رّ",
+      "شَّهَ",
+      ""
+    ],
+    [
+      "ـٰ",
+      "madda_normal"
+    ],
+    [
+      "دَةَ لِلَّهِ ۚ ذ",
       ""
     ],
     [
@@ -57,26 +117,106 @@
       "madda_normal"
     ],
     [
-      "حِم",
+      "لِكُمْ يُوعَظُ بِه",
       ""
     ],
     [
-      "ِي",
-      "madda_permissible"
+      "ِۦ",
+      "madda_normal"
     ],
     [
-      "نَ",
+      " مَ",
       ""
     ],
     [
-      "۝١١٨",
+      "ن",
+      "ikhafa"
+    ],
+    [
+      " ",
+      ""
+    ],
+    [
+      "ك",
+      "ikhafa"
+    ],
+    [
+      "َانَ يُؤْمِنُ بِ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "للَّهِ وَ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "لْيَوْمِ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "لْـَٔاخِرِ ۚ وَم",
+      ""
+    ],
+    [
+      "َن",
+      "idgham_ghunnah"
+    ],
+    [
+      " ",
+      ""
+    ],
+    [
+      "ي",
+      "idgham_ghunnah"
+    ],
+    [
+      "َتَّقِ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "للَّهَ يَ",
+      ""
+    ],
+    [
+      "جْ",
+      "qalaqah"
+    ],
+    [
+      "عَل لَّهُ",
+      ""
+    ],
+    [
+      "ۥ",
+      "madda_normal"
+    ],
+    [
+      " مَخْرَجًا",
+      ""
+    ],
+    [
+      "۝٢",
       "end"
     ]
   ],
-  "transliteration": "Waqul rabbi ighfir warhamwaanta khayru arrahimeen",
-  "translation": "And, [O Muḥammad], say, \"My Lord, forgive and have mercy, and You are the best of the merciful.\"",
+  "transliteration": "Fa-itha balaghna ajalahunnafaamsikoohunna bimaAAroofin aw fariqoohunna bimaAAroofinwaashhidoo thaway AAadlin minkum waaqeemoo ashshahadatalillahi thalikum yooAAathu bihi man kanayu/minu billahi walyawmi al-akhiriwaman yattaqi Allaha yajAAal lahu makhraja",
+  "translation": "And when they have [nearly] fulfilled their term, either retain them according to acceptable terms or part with them according to acceptable terms. And bring to witness two just men from among you and establish the testimony for [the acceptance of] Allāh. That is instructed to whoever should believe in Allāh and the Last Day. And whoever fears Allāh - He will make for him a way out",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-22"
+  "date": "2026-11-23"
 }
