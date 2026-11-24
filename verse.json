@@ -1,51 +1,11 @@
 {
-  "key": "65:2",
-  "reference": "At-Talaq 65:2",
-  "surah_arabic": "الطلاق",
-  "arabic": "فَإِذَا بَلَغْنَ أَجَلَهُنَّ فَأَمْسِكُوهُنَّ بِمَعْرُوفٍ أَوْ فَارِقُوهُنَّ بِمَعْرُوفٍ وَأَشْهِدُوا۟ ذَوَىْ عَدْلٍ مِّنكُمْ وَأَقِيمُوا۟ ٱلشَّهَـٰدَةَ لِلَّهِ ۚ ذَٰلِكُمْ يُوعَظُ بِهِۦ مَن كَانَ يُؤْمِنُ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ ۚ وَمَن يَتَّقِ ٱللَّهَ يَجْعَل لَّهُۥ مَخْرَجًا",
+  "key": "3:139",
+  "reference": "Ali 'Imran 3:139",
+  "surah_arabic": "آل عمران",
+  "arabic": "وَلَا تَهِنُوا۟ وَلَا تَحْزَنُوا۟ وَأَنتُمُ ٱلْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ",
   "tajweed": [
     [
-      "فَإِذَا بَلَغْنَ أَجَلَهُ",
-      ""
-    ],
-    [
-      "نّ",
-      "ghunnah"
-    ],
-    [
-      "َ فَأَمْسِكُوهُ",
-      ""
-    ],
-    [
-      "نّ",
-      "ghunnah"
-    ],
-    [
-      "َ بِمَعْرُوفٍ أَوْ فَارِقُوهُ",
-      ""
-    ],
-    [
-      "نّ",
-      "ghunnah"
-    ],
-    [
-      "َ بِمَعْرُو",
-      ""
-    ],
-    [
-      "فٍ",
-      "idgham_ghunnah"
-    ],
-    [
-      " ",
-      ""
-    ],
-    [
-      "و",
-      "idgham_ghunnah"
-    ],
-    [
-      "َأَشْهِدُو",
+      "وَلَا تَهِنُو",
       ""
     ],
     [
@@ -53,43 +13,23 @@
       "slnt"
     ],
     [
-      " ذَوَىْ عَ",
+      " وَلَا تَحْزَنُو",
       ""
     ],
     [
-      "دْ",
-      "qalaqah"
+      "ا۟",
+      "slnt"
     ],
     [
-      "لٍ",
-      "idgham_ghunnah"
-    ],
-    [
-      " ",
+      " وَأَ",
       ""
     ],
     [
-      "م",
-      "idgham_ghunnah"
-    ],
-    [
-      "ِّ",
-      ""
-    ],
-    [
-      "نك",
+      "نت",
       "ikhafa"
     ],
     [
-      "ُمْ وَأَقِيمُو",
-      ""
-    ],
-    [
-      "ا۟",
-      "slnt"
-    ],
-    [
-      " ",
+      "ُمُ ",
       ""
     ],
     [
@@ -97,35 +37,7 @@
       "ham_wasl"
     ],
     [
-      "ل",
-      "laam_shamsiyah"
-    ],
-    [
-      "شَّهَ",
-      ""
-    ],
-    [
-      "ـٰ",
-      "madda_normal"
-    ],
-    [
-      "دَةَ لِلَّهِ ۚ ذ",
-      ""
-    ],
-    [
-      "َٰ",
-      "madda_normal"
-    ],
-    [
-      "لِكُمْ يُوعَظُ بِه",
-      ""
-    ],
-    [
-      "ِۦ",
-      "madda_normal"
-    ],
-    [
-      " مَ",
+      "لْأَعْلَوْنَ إِ",
       ""
     ],
     [
@@ -141,82 +53,46 @@
       "ikhafa"
     ],
     [
-      "َانَ يُؤْمِنُ بِ",
+      "ُ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "نت",
+      "ikhafa"
     ],
     [
-      "للَّهِ وَ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "لْيَوْمِ ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "لْـَٔاخِرِ ۚ وَم",
-      ""
-    ],
-    [
-      "َن",
-      "idgham_ghunnah"
+      "ُم",
+      "idgham_shafawi"
     ],
     [
       " ",
       ""
     ],
     [
-      "ي",
-      "idgham_ghunnah"
+      "م",
+      "idgham_shafawi"
     ],
     [
-      "َتَّقِ ",
+      "ُّؤْمِن",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "ِي",
+      "madda_permissible"
     ],
     [
-      "للَّهَ يَ",
+      "نَ",
       ""
     ],
     [
-      "جْ",
-      "qalaqah"
-    ],
-    [
-      "عَل لَّهُ",
-      ""
-    ],
-    [
-      "ۥ",
-      "madda_normal"
-    ],
-    [
-      " مَخْرَجًا",
-      ""
-    ],
-    [
-      "۝٢",
+      "۝١٣٩",
       "end"
     ]
   ],
-  "transliteration": "Fa-itha balaghna ajalahunnafaamsikoohunna bimaAAroofin aw fariqoohunna bimaAAroofinwaashhidoo thaway AAadlin minkum waaqeemoo ashshahadatalillahi thalikum yooAAathu bihi man kanayu/minu billahi walyawmi al-akhiriwaman yattaqi Allaha yajAAal lahu makhraja",
-  "translation": "And when they have [nearly] fulfilled their term, either retain them according to acceptable terms or part with them according to acceptable terms. And bring to witness two just men from among you and establish the testimony for [the acceptance of] Allāh. That is instructed to whoever should believe in Allāh and the Last Day. And whoever fears Allāh - He will make for him a way out",
+  "transliteration": "Wala tahinoo wala tahzanoowaantumu al-aAAlawna in kuntum mu/mineen",
+  "translation": "So do not weaken and do not grieve, and you will be superior if you are [true] believers.",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-23"
+  "date": "2026-11-24"
 }
