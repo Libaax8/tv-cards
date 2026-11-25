@@ -1,35 +1,11 @@
 {
-  "key": "3:139",
-  "reference": "Ali 'Imran 3:139",
-  "surah_arabic": "آل عمران",
-  "arabic": "وَلَا تَهِنُوا۟ وَلَا تَحْزَنُوا۟ وَأَنتُمُ ٱلْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ",
+  "key": "17:24",
+  "reference": "Al-Isra 17:24",
+  "surah_arabic": "الإسراء",
+  "arabic": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
   "tajweed": [
     [
-      "وَلَا تَهِنُو",
-      ""
-    ],
-    [
-      "ا۟",
-      "slnt"
-    ],
-    [
-      " وَلَا تَحْزَنُو",
-      ""
-    ],
-    [
-      "ا۟",
-      "slnt"
-    ],
-    [
-      " وَأَ",
-      ""
-    ],
-    [
-      "نت",
-      "ikhafa"
-    ],
-    [
-      "ُمُ ",
+      "وَ",
       ""
     ],
     [
@@ -37,62 +13,58 @@
       "ham_wasl"
     ],
     [
-      "لْأَعْلَوْنَ إِ",
+      "خْفِضْ لَهُمَا جَنَاحَ ",
       ""
     ],
     [
-      "ن",
-      "ikhafa"
+      "ٱ",
+      "ham_wasl"
     ],
     [
-      " ",
+      "ل",
+      "laam_shamsiyah"
+    ],
+    [
+      "ذُّلِّ مِنَ ",
       ""
     ],
     [
-      "ك",
-      "ikhafa"
+      "ٱ",
+      "ham_wasl"
     ],
     [
-      "ُ",
+      "ل",
+      "laam_shamsiyah"
+    ],
+    [
+      "رَّحْمَةِ وَقُ",
       ""
     ],
     [
-      "نت",
-      "ikhafa"
+      "ل",
+      "idgham_mutaqaribayn"
     ],
     [
-      "ُم",
-      "idgham_shafawi"
-    ],
-    [
-      " ",
+      " رَّبِّ ",
       ""
     ],
     [
-      "م",
-      "idgham_shafawi"
+      "ٱ",
+      "ham_wasl"
     ],
     [
-      "ُّؤْمِن",
+      "رْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
       ""
     ],
     [
-      "ِي",
-      "madda_permissible"
-    ],
-    [
-      "نَ",
-      ""
-    ],
-    [
-      "۝١٣٩",
+      "۝٢٤",
       "end"
     ]
   ],
-  "transliteration": "Wala tahinoo wala tahzanoowaantumu al-aAAlawna in kuntum mu/mineen",
-  "translation": "So do not weaken and do not grieve, and you will be superior if you are [true] believers.",
+  "transliteration": "Wakhfid lahuma janahaaththulli mina arrahmati waqulrabbi irhamhuma kama rabbayanee sagheera",
+  "translation": "And lower to them the wing of humility out of mercy and say, \"My Lord, have mercy upon them as they brought me up [when I was] small.\"",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-24"
+  "date": "2026-11-25"
 }
