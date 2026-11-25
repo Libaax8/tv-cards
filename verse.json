@@ -1,70 +1,118 @@
 {
-  "key": "17:24",
-  "reference": "Al-Isra 17:24",
-  "surah_arabic": "الإسراء",
-  "arabic": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
+  "key": "42:30",
+  "reference": "Ash-Shuraa 42:30",
+  "surah_arabic": "الشورى",
+  "arabic": "وَمَآ أَصَـٰبَكُم مِّن مُّصِيبَةٍ فَبِمَا كَسَبَتْ أَيْدِيكُمْ وَيَعْفُوا۟ عَن كَثِيرٍ",
   "tajweed": [
     [
-      "وَ",
+      "وَم",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "َآ",
+      "madda_obligatory"
     ],
     [
-      "خْفِضْ لَهُمَا جَنَاحَ ",
+      " أَصَ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "ـٰ",
+      "madda_normal"
     ],
     [
-      "ل",
-      "laam_shamsiyah"
-    ],
-    [
-      "ذُّلِّ مِنَ ",
+      "بَك",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "ُم",
+      "idgham_shafawi"
     ],
     [
-      "ل",
-      "laam_shamsiyah"
-    ],
-    [
-      "رَّحْمَةِ وَقُ",
+      " ",
       ""
     ],
     [
-      "ل",
-      "idgham_mutaqaribayn"
+      "م",
+      "idgham_shafawi"
     ],
     [
-      " رَّبِّ ",
+      "ّ",
       ""
     ],
     [
-      "ٱ",
-      "ham_wasl"
+      "ِن",
+      "idgham_ghunnah"
     ],
     [
-      "رْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
+      " ",
       ""
     ],
     [
-      "۝٢٤",
+      "م",
+      "idgham_ghunnah"
+    ],
+    [
+      "ُّصِيبَ",
+      ""
+    ],
+    [
+      "ةٍ",
+      "ikhafa"
+    ],
+    [
+      " ",
+      ""
+    ],
+    [
+      "ف",
+      "ikhafa"
+    ],
+    [
+      "َبِمَا كَسَبَتْ أَيْدِيكُمْ وَيَعْفُو",
+      ""
+    ],
+    [
+      "ا۟",
+      "slnt"
+    ],
+    [
+      " عَ",
+      ""
+    ],
+    [
+      "ن",
+      "ikhafa"
+    ],
+    [
+      " ",
+      ""
+    ],
+    [
+      "ك",
+      "ikhafa"
+    ],
+    [
+      "َث",
+      ""
+    ],
+    [
+      "ِي",
+      "madda_permissible"
+    ],
+    [
+      "رٍ",
+      ""
+    ],
+    [
+      "۝٣٠",
       "end"
     ]
   ],
-  "transliteration": "Wakhfid lahuma janahaaththulli mina arrahmati waqulrabbi irhamhuma kama rabbayanee sagheera",
-  "translation": "And lower to them the wing of humility out of mercy and say, \"My Lord, have mercy upon them as they brought me up [when I was] small.\"",
+  "transliteration": "Wama asabakum min museebatinfabima kasabat aydeekum wayaAAfoo AAan katheer",
+  "translation": "And whatever strikes you of disaster - it is for what your hands have earned; but He pardons much.",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-25"
+  "date": "2026-11-26"
 }
