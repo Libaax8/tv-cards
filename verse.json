@@ -1,75 +1,35 @@
 {
-  "key": "42:30",
-  "reference": "Ash-Shuraa 42:30",
-  "surah_arabic": "الشورى",
-  "arabic": "وَمَآ أَصَـٰبَكُم مِّن مُّصِيبَةٍ فَبِمَا كَسَبَتْ أَيْدِيكُمْ وَيَعْفُوا۟ عَن كَثِيرٍ",
+  "key": "2:152",
+  "reference": "Al-Baqarah 2:152",
+  "surah_arabic": "البقرة",
+  "arabic": "فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ",
   "tajweed": [
     [
-      "وَم",
+      "فَ",
       ""
     ],
     [
-      "َآ",
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "ذْكُرُون",
+      ""
+    ],
+    [
+      "ِىٓ",
       "madda_obligatory"
     ],
     [
-      " أَصَ",
+      " أَذْكُرْكُمْ وَ",
       ""
     ],
     [
-      "ـٰ",
-      "madda_normal"
+      "ٱ",
+      "ham_wasl"
     ],
     [
-      "بَك",
-      ""
-    ],
-    [
-      "ُم",
-      "idgham_shafawi"
-    ],
-    [
-      " ",
-      ""
-    ],
-    [
-      "م",
-      "idgham_shafawi"
-    ],
-    [
-      "ّ",
-      ""
-    ],
-    [
-      "ِن",
-      "idgham_ghunnah"
-    ],
-    [
-      " ",
-      ""
-    ],
-    [
-      "م",
-      "idgham_ghunnah"
-    ],
-    [
-      "ُّصِيبَ",
-      ""
-    ],
-    [
-      "ةٍ",
-      "ikhafa"
-    ],
-    [
-      " ",
-      ""
-    ],
-    [
-      "ف",
-      "ikhafa"
-    ],
-    [
-      "َبِمَا كَسَبَتْ أَيْدِيكُمْ وَيَعْفُو",
+      "شْكُرُو",
       ""
     ],
     [
@@ -77,42 +37,26 @@
       "slnt"
     ],
     [
-      " عَ",
+      " لِى وَلَا تَكْفُر",
       ""
     ],
     [
-      "ن",
-      "ikhafa"
-    ],
-    [
-      " ",
-      ""
-    ],
-    [
-      "ك",
-      "ikhafa"
-    ],
-    [
-      "َث",
-      ""
-    ],
-    [
-      "ِي",
+      "ُو",
       "madda_permissible"
     ],
     [
-      "رٍ",
+      "نِ",
       ""
     ],
     [
-      "۝٣٠",
+      "۝١٥٢",
       "end"
     ]
   ],
-  "transliteration": "Wama asabakum min museebatinfabima kasabat aydeekum wayaAAfoo AAan katheer",
-  "translation": "And whatever strikes you of disaster - it is for what your hands have earned; but He pardons much.",
+  "transliteration": "Fathkuroonee athkurkumwashkuroo lee wala takfuroon",
+  "translation": "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-26"
+  "date": "2026-11-27"
 }
