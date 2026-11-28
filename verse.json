@@ -1,11 +1,11 @@
 {
-  "key": "2:152",
-  "reference": "Al-Baqarah 2:152",
-  "surah_arabic": "البقرة",
-  "arabic": "فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ",
+  "key": "11:114",
+  "reference": "Hud 11:114",
+  "surah_arabic": "هود",
+  "arabic": "وَأَقِمِ ٱلصَّلَوٰةَ طَرَفَىِ ٱلنَّهَارِ وَزُلَفًا مِّنَ ٱلَّيْلِ ۚ إِنَّ ٱلْحَسَنَـٰتِ يُذْهِبْنَ ٱلسَّيِّـَٔاتِ ۚ ذَٰلِكَ ذِكْرَىٰ لِلذَّٰكِرِينَ",
   "tajweed": [
     [
-      "فَ",
+      "وَأَقِمِ ",
       ""
     ],
     [
@@ -13,50 +13,142 @@
       "ham_wasl"
     ],
     [
-      "ذْكُرُون",
+      "ل",
+      "laam_shamsiyah"
+    ],
+    [
+      "صَّلَ",
       ""
     ],
     [
-      "ِىٓ",
-      "madda_obligatory"
-    ],
-    [
-      " أَذْكُرْكُمْ وَ",
-      ""
-    ],
-    [
-      "ٱ",
-      "ham_wasl"
-    ],
-    [
-      "شْكُرُو",
-      ""
-    ],
-    [
-      "ا۟",
+      "و",
       "slnt"
     ],
     [
-      " لِى وَلَا تَكْفُر",
+      "ٰ",
+      "madda_normal"
+    ],
+    [
+      "ةَ طَرَفَىِ ",
       ""
     ],
     [
-      "ُو",
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "ل",
+      "laam_shamsiyah"
+    ],
+    [
+      "نّ",
+      "ghunnah"
+    ],
+    [
+      "َهَارِ وَزُلَ",
+      ""
+    ],
+    [
+      "فًا",
+      "idgham_ghunnah"
+    ],
+    [
+      " ",
+      ""
+    ],
+    [
+      "م",
+      "idgham_ghunnah"
+    ],
+    [
+      "ِّنَ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "لَّيْلِ ۚ إِ",
+      ""
+    ],
+    [
+      "نّ",
+      "ghunnah"
+    ],
+    [
+      "َ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "لْحَسَنَ",
+      ""
+    ],
+    [
+      "ـٰ",
+      "madda_normal"
+    ],
+    [
+      "تِ يُذْهِ",
+      ""
+    ],
+    [
+      "بْ",
+      "qalaqah"
+    ],
+    [
+      "نَ ",
+      ""
+    ],
+    [
+      "ٱ",
+      "ham_wasl"
+    ],
+    [
+      "ل",
+      "laam_shamsiyah"
+    ],
+    [
+      "سَّيِّـَٔاتِ ۚ ذ",
+      ""
+    ],
+    [
+      "َٰ",
+      "madda_normal"
+    ],
+    [
+      "لِكَ ذِكْرَىٰ لِلذّ",
+      ""
+    ],
+    [
+      "َٰ",
+      "madda_normal"
+    ],
+    [
+      "كِر",
+      ""
+    ],
+    [
+      "ِي",
       "madda_permissible"
     ],
     [
-      "نِ",
+      "نَ",
       ""
     ],
     [
-      "۝١٥٢",
+      "۝١١٤",
       "end"
     ]
   ],
-  "transliteration": "Fathkuroonee athkurkumwashkuroo lee wala takfuroon",
-  "translation": "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
+  "transliteration": "Waaqimi assalata tarafayiannahari wazulafan mina allayli inna alhasanatiyuthhibna assayyi-ati thalika thikraliththakireen",
+  "translation": "And establish prayer at the two ends of the day and at the approach of the night. Indeed, good deeds do away with misdeeds. That is a reminder for those who remember.",
   "translation_by": "Saheeh International",
   "source": "quran.com",
   "checked_against": "alquran.cloud (Tanzil)",
-  "date": "2026-11-27"
+  "date": "2026-11-28"
 }

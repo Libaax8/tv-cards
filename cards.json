@@ -1,34 +1,34 @@
 {
   "cards": [
     {
-      "subtitle": "Next prayer, tomorrow",
+      "subtitle": "Next prayer",
       "title": "Fajr 07:01",
       "value": "Iqamah 07:11"
     },
     {
       "subtitle": "Morning, Tawfiiq",
-      "title": "Fajr 06:59",
-      "value": "Sunrise 08:42"
+      "title": "Fajr 07:01",
+      "value": "Sunrise 08:44"
     },
     {
       "subtitle": "Midday",
-      "title": "Dhuhr 12:09",
-      "value": "Asr 13:14"
+      "title": "Dhuhr 12:10",
+      "value": "Asr 13:13"
     },
     {
       "subtitle": "Evening",
-      "title": "Maghrib 15:29",
-      "value": "Isha 17:02"
+      "title": "Maghrib 15:28",
+      "value": "Isha 17:01"
     },
     {
       "subtitle": "Jumu'ah",
-      "title": "Today 12:30",
-      "value": "Prayer 13:00"
+      "title": "Friday 12:30",
+      "value": "In 6 days"
     },
     {
       "subtitle": "Hijri date",
-      "title": "17 Jumada II 1448",
-      "value": "Ramadan in ~73 days"
+      "title": "18 Jumada II 1448",
+      "value": "Ramadan in ~72 days"
     },
     {
       "subtitle": "Sunnah fast",
@@ -37,8 +37,8 @@
     },
     {
       "subtitle": "Dhikr of the day",
-      "title": "Salawat on the Prophet",
-      "value": "Most of all on Friday"
+      "title": "Hasbunallah",
+      "value": "Allah is enough for us"
     }
   ]
 }
